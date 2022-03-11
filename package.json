@@ -1,0 +1,20 @@
+{
+  "name": "TwitterBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TwitterBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "needle": "^3.0.0",
+    "node": "^17.5.0",
+    "npm": "^8.5.3",
+    "twit": "^2.2.11"
+  }
+}
