@@ -40,6 +40,23 @@ async function getAllRules() {
     return(response.body);
 }
 
+//code to get and  set rules
+// async function getrules()   {
+//  let currentRules;
+
+//     try {
+//         // Gets the complete list of rules currently applied to the stream
+//         currentRules = await getAllRules();
+
+//         // Add rules to the stream. Comment the line below if you don't want to add new rules.
+//         //await setRules();
+
+//     } catch (e) {
+//         console.error(e);
+//         process.exit(1);
+//     }
+// }
+
 
 function streamConnect(retryAttempt) {
 
