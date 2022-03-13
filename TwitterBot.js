@@ -40,7 +40,8 @@ async function getAllRules() {
     return(response.body);
 }
 
-//code to get and  set rules
+//code to get and  set rules and run stream
+//Comment all the code below 
 // async function getrules()   {
 //  let currentRules;
 
@@ -55,6 +56,8 @@ async function getAllRules() {
 //         console.error(e);
 //         process.exit(1);
 //     }
+
+//streamConnect(0)
 // }
 
 
@@ -92,8 +95,8 @@ function streamConnect(retryAttempt) {
             retryAttempt = 0;
             
         } catch (e) {
-            if (data.detail === "This stream is currently at the maximum allowed connection limit.") {
-                console.log(data.detail)
+            if (twitdata.detail === "This stream is currently at the maximum allowed connection limit.") {
+                console.log(twitdata.detail)
                 process.exit(1)
             } else {
             }
