@@ -75,11 +75,10 @@ function streamConnect(retryAttempt) {
         try {
             const twitdata = JSON.parse(data);
             const iddata = Object.values(twitdata.data)
-            console.log(iddata[0])
+            //console.log(iddata[0])
             client.login(process.env.DISCORD_TOKEN);
             client.once('ready', ()=> {
                 console.log(`the client becomes ready to start`);
-                //console.log(streamConnect.twitdata.data.id)
                 var url = "https://twitter.com/" + "RaumNetwork" + "/status/" + iddata[0]
                 console.log(url)
                     try {
